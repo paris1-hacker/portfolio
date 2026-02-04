@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+  <defs>
+    <linearGradient id="g5" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="transparent"/>
+  <g transform="translate(40,40)">
+    <!-- Mark: stylized cross -->
+    <g>
+      <rect x="0" y="0" width="20" height="60" rx="6" fill="black"/>
+      <rect x="20" y="20" width="60" height="20" rx="6" fill="black"/>
+      <g stroke="white" stroke-width="3" fill="none">
+        <path d="M0 0 L80 80"/>
+      </g>
+    </g>
+    <!-- Text -->
+    <text x="120" y="56" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="44" fill="url(#g5)" stroke="black" stroke-width="1">CrossSoft</text>
+    <text x="120" y="92" font-family="Arial,Helvetica,sans-serif" font-weight="600" font-size="20" fill="#bfbfbf">Technologies</text>
+  </g>
+</svg>

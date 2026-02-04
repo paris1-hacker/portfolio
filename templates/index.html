@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+
+
+<!-- Mirrored from polix-html.vercel.app/polix/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jan 2026 15:28:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Paris - Personal Portfolio HTML Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Apexels">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.ico'%}" type="image/png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+    <!-- Latest Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/all.min.css'%}">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="{%static 'assets/css/lightbox.min.css'%}">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{%static 'assets/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/owl.theme.default.min.css'%}">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="{%static 'assets/css/animate.min.css'%}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'assets/scss/style.css'%}">
+</head>
+
+<body>
+    <!-- START PRELOADER -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!-- END PRELOADER -->
+
+    <div class="container-fluid">
+        <div class="row h-100">
+
+            <!-- Left Column -->
+            <div class="col-md-6 col-sm-12 text-white d-flex flex-column align-items-center py-5">
+                <a href="{%url 'portfolio'%}" class="mb-4 logo align-self-start">Paris</a>
+            
+                <div class="blob"></div>
+
+
+                <div class="rounded-4 p-3 w-75 hero_image">
+                    <img src="{% static 'assets/img/IMG-20260115-WA0071.jpg'%}" class="img-fluid rounded-4 mb-3" alt="Joniba Smith">
+                    <h3 class="text-center">Ofem Patrick ~ Paris</h3>
+                    <p class="text-center">Backend Software Engineer</p>
+                </div>
+
+                <div class="theme-switch">
+                    <input type="checkbox" id="themeToggle" />
+                    <label for="themeToggle" class="switch-label">
+                        <span class="icon moon"><i class="fas fa-moon"></i></span>
+                        <span class="icon sun"><i class="fas fa-sun"></i></span>
+                        <span class="switch-ball"></span>
+                    </label>
+                </div>
+
+
+                <div class="d-flex flex-column mt-4 social_icon_area social_icon">
+                    <a href="https://www.facebook.com/profile.php?id=61585556735119" class="d-flex align-items-center justify-content-center" title="Facebook">
+                        <i class="fab fa-facebook-f fa-lg me-2"></i>
+                    </a>
+                    <a href="#" class="d-flex align-items-center justify-content-center" title="Instagram">
+                        <i class="fab fa-instagram fa-lg me-2"></i>
+                    </a>
+                    <a href="https://ng.linkedin.com/in/ofem-patrick-a0a131383" class="d-flex align-items-center justify-content-center" title="LinkedIn">
+                        <i class="fab fa-linkedin-in fa-lg me-2"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6 col-sm-12 p-0 position-relative overflow-hidden">
+                <div id="menu-item" class="row h-100 g-0 position-absolute w-100 transition-left z-1">
+                    <div
+                        class="col-6 menu_list_item aboutBtn d-flex justify-content-center align-items-center bg-1 text-white fw-bold fs-5">
+                        <span>
+                            <span class="text-1">ABOUT ME</span>
+                            <span class="text-2">ABOUT ME</span>
+                        </span>
+                    </div>
+                    <div
+                        class="col-6 menu_list_item serviceBtn d-flex justify-content-center align-items-center bg-2 text-white fw-bold fs-5">
+                        <span>
+                            <span class="text-1">MY SERVICES</span>
+                            <span class="text-2">MY SERVICES</span>
+                        </span>
+                    </div>
+                    <div
+                        class="col-6 menu_list_item careerBtn d-flex justify-content-center align-items-center bg-3 text-white fw-bold fs-5">
+                        <span>
+                            <span class="text-1">MY CAREER</span>
+                            <span class="text-2">MY CAREER</span>
+                        </span>
+                    </div>
+                    <div
+                        class="col-6 menu_list_item folioBtn d-flex justify-content-center align-items-center bg-4 text-white fw-bold fs-5">
+                        <span>
+                            <span class="text-1">MY FOLIO</span>
+                            <span class="text-2">MY FOLIO</span>
+                        </span>
+                    </div>
+                    <div
+                        class="col-6 menu_list_item clientBtn d-flex justify-content-center align-items-center bg-5 text-white fw-bold fs-5">
+                        <span>
+                            <span class="text-1">MY CLIENTS</span>
+                            <span class="text-2">MY CLIENTS</span>
+                        </span>
+                    </div>
+                    <div
+                        class="col-6 menu_list_item contactBtn d-flex justify-content-center align-items-center bg-6 text-white fw-bold fs-5">
+                        <span>
+                            <span class="text-1">CONTACT ME</span>
+                            <span class="text-2">CONTACT ME</span>
+                        </span>
+                    </div>
+                </div>
+
+
+                <!-- About section -->
+                <section id="aboutPanel" class="slide-panel text-white p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold text-white">ABOUT ME</h4>
+                        <a href="#" class="back_btn fw-bold text-decoration-none" id="backBtnAbout"><img
+                            src="{% static 'assets/img/icon_back.svg'%}" alt=""> Back</a>
+                    </div>
+
+                    <p class="about_content animate__animated animate__fadeIn">
+                        Hi, I’m Ofem Patrick, a backend developer who enjoys building reliable, scalable, and efficient systems behind the scenes. I focus on designing APIs, managing databases, and writing clean, maintainable server-side code that powers real-world applications.
+
+                        I’m passionate about problem-solving and enjoy working with backend technologies to turn complex requirements into solid, working solutions. I care about performance, security, and writing code that’s easy to understand and extend. I’m always learning—whether it’s improving system architecture, exploring new backend tools, or refining best practices.
+
+                        My goal is to contribute to impactful projects, grow as an engineer, and build systems that are not just functional, but dependable and scalable.
+                    </p>
+
+                    <div class="mt-4">
+                        <p><strong>Name :</strong> Ofem Patrick</p>
+                        <p><strong>Profession :</strong> Backend Developer</p>
+                        <p><strong>Phone :</strong> +234 9134119771</p>
+                        <p><strong>E-mail :</strong> ofempatrick10@gmail.com</p>
+                        <p><strong>Address :</strong> Atimbo, Calabar Cross River State</p>
+                    </div>
+
+                    <div class="mt-4 d-flex gap-3">
+                        <a href="{%url 'download-cv'%}"  class="main_btn">
+                            <span>
+                                <span class="text-1">Download CV</span>
+                                <span class="text-2">Download CV</span>
+                            </span>
+                        </a>
+
+                        <a href=""  class="main_btn secondary_btn">
+                            <span>
+                                <span class="text-1">My Services</span>
+                                <span class="text-2">My Services</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <h5 class="mt-5 mb-3 fw-bold">MY DESIGN TOOLS</h5>
+                    <div class="skills_icon d-flex gap-4">
+                        <img src="{% static 'assets/img/django.svg'%}" alt="Figma" width="50">
+                        <img src="{% static 'assets/img/python.svg'%}" alt="Photoshop" width="50">
+                        <img src="{% static 'assets/img/js.svg'%}" alt="XD" width="50">
+                        <img src="{% static 'assets/img/sql-database-generic.svg'%}" alt="Illustrator" width="50">
+                    </div>
+                </section>
+
+                <!-- Service section -->
+                <section id="servicePanel" class="slide-panel text-white p-5">
+                    <div class="text-white py-4">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h4 class="fw-bold text-white">MY SERVICES</h4>
+                            <a href="#" class="back_btn fw-bold text-decoration-none" id="backBtnService"><img
+                                    src="{% static 'assets/img/icon_back.svg'%}" alt=""> Back</a>
+                        </div>
+
+                        <div class="service_area">
+                            <div class="single_service bg_border1 d-flex align-items-center p-5 mb-3">
+                                <div
+                                    class="service-number bg-1 text-white d-flex align-items-center justify-content-center me-3">
+                                    01</div>
+                                <span>API Development & Integration:</span>
+                            </div>
+
+                            <div class="single_service bg_border2 d-flex align-items-center p-5 mb-3">
+                                <div
+                                    class="service-number bg-2 text-white d-flex align-items-center justify-content-center me-3">
+                                    02</div>
+                                <span>Database Design & Management</span>
+                            </div>
+
+                            <div class="single_service bg_border3 d-flex align-items-center p-5 mb-3">
+                                <div
+                                    class="service-number bg-3 text-white d-flex align-items-center justify-content-center me-3">
+                                    03</div>
+                                <span>Authentication & Authorization</span>
+                            </div>
+
+                            <div class="single_service bg_border4 d-flex align-items-center p-5 mb-3">
+                                <div
+                                    class="service-number  bg-4 text-white d-flex align-items-center justify-content-center me-3">
+                                    04</div>
+                                <span>Cloud Deployment:</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Career section -->
+                <section id="careerPanel" class="slide-panel text-white">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold text-white">MY CAREER</h4>
+                        <a href="#" class="back_btn fw-bold text-decoration-none p-5" id="backBtnCareer"><img
+                                src="{% static 'assets/img/icon_back.svg'%}" alt=""> Back</a>
+                    </div>
+
+                    <div class="career-section text-white">
+                        <div class="timeline-wrapper position-relative">
+
+                            <!-- Item 1 (Left) -->
+                            <div class="timeline-item left">
+                                <div class="content timebg-1">
+                                    <h6 class="fw-bold mb-2">Lead Backend Developer (intern) </h6>
+                                    <p class="mb-0">Techminds - March 2025 to Present</p>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 (Right) -->
+                            <div class="timeline-item right">
+                                <div class="content timebg-2">
+                                    <h6 class="fw-bold mb-2">UNICROSS Developer Club </h6>
+                                    <p class="mb-0">– Web Developer- February 2025 – June 2025
+                                        <br>
+                                        Built and maintained backend APIs with Python (Django).
+
+                                        Connected frontend React apps with backend using Fetch API.
+
+                                        Collaborated on a student tech project team for real-time app development.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 (Left) -->
+                            <div class="timeline-item left">
+                                <div class="content timebg-1">
+                                    <h6 class="fw-bold mb-2">Freelance Projects – Backend Developer</h6>
+                                    <p class="mb-0">VenVictor Mentorship - 2025 till date. <br>
+                                        Designed interactive frontend pages using HTML, CSS, JavaScript, and  CSS.
+
+                                        Implemented smooth animations with AOS.js.
+
+                                        Helped deploy a school event portal for the tech club.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 4 (Right) -->
+                            <div class="timeline-item right">
+                                <div class="content timebg-2">
+                                    <h6 class="fw-bold mb-2">Self-Learning / Personal Projects</h6>
+                                    <p class="mb-0">Created personal and client web projects (portfolio sites, login systems).
+
+                                        Integrated Python Django backend with React frontend using REST APIs.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Portfolio section -->
+                <section id="folioPanel" class="slide-panel text-white p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold text-white">MY FOLIO</h4>
+                        <a href="#" class="back_btn fw-bold text-decoration-none" id="backBtnFolio"><img
+                                src="{% static 'assets/img/icon_back.svg'%}" alt=""> Back</a>
+                    </div>
+
+                    <div class="row portfolio_item">
+                        <div class="col-lg-6 col-md-6 portfolio_img">
+                            <div class="image-overlay-wrapper">
+                                <img src="{% static 'assets/img/Screenshot.png'%}" alt="Overlay Image">
+                                <div class="image-overlay-content">
+                                    <a href="{% static 'assets/img/Screenshot.png'%}" data-lightbox="images"><i
+                                            class="fa-solid fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 portfolio_img">
+                            <div class="image-overlay-wrapper">
+                                <img src="{% static 'assets/img/portfolio/2.png'%}" alt="Overlay Image">
+                                <div class="image-overlay-content">
+                                    <a href="{%static 'assets/img/portfolio/2.png'%}" data-lightbox="images"><i
+                                            class="fa-solid fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 portfolio_img">
+                            <div class="image-overlay-wrapper">
+                                <img src="{%static 'assets/img/portfolio/3.png'%}" alt="Overlay Image">
+                                <div class="image-overlay-content">
+                                    <a href="{% static 'assets/img/portfolio/3.png'%}" data-lightbox="images"><i
+                                            class="fa-solid fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 portfolio_img">
+                            <div class="image-overlay-wrapper">
+                                <img src="{%static 'assets/img/portfolio/4.png'%}" alt="Overlay Image">
+                                <div class="image-overlay-content">
+                                    <a href="{% static 'assets/img/portfolio/4.png'%}" data-lightbox="images"><i
+                                            class="fa-solid fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Portfolio section -->
+                <section id="clientPanel" class="slide-panel text-white p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold text-white">MY CLIENTS</h4>
+                        <a href="#" class="back_btn fw-bold text-decoration-none" id="backBtnClient"><img
+                                src="{%static 'assets/img/icon_back.svg'%}" alt=""> Back</a>
+                    </div>
+
+                    <div class="client-section text-white py-5">
+                        <div class="client_area text-center">
+                            
+                            
+                            <p class="about_content animate__animated animate__fadeIn">
+                                
+                                1	VenVictor Mentorship	EdTech / Mentorship Platform	                              
+                            </p>
+
+                            <p class="about_content animate__animated animate__fadeIn">
+                                    
+                                2	UNICROSS Developer Club	Education / Student Tech Hub	
+                            </p>
+
+                            <p class="about_content animate__animated animate__fadeIn">
+                                    
+                                3	Tech Minds - Coding Academy 	
+                            </p>
+
+                            <p class="about_content animate__animated animate__fadeIn">
+                                
+                                4	NaijaMart Digital (fictional but realistic)	E-commerce Startup	
+                            </p>
+
+
+                            <p class="about_content animate__animated animate__fadeIn">
+                            
+                                5	CrossSoft Technologies (fictional but professional)	Software Agency	
+                            </p>
+                            
+                            
+                            
+                            
+                            
+                            {% comment %} <div class="clients-grid">
+                                <img src="{%static 'assets/img/clients/clientlogo.svg'%}" alt="">
+                            </div> {% endcomment %}
+
+                            <div class="client_content">
+
+                                <h5 class="client_cta fw-bold mt-5 mb-3">Do You Have idea? Need to<br>Covert it in
+                                    Reality</h5>
+
+                                <!-- Button -->
+                                <div class="mt-4 d-flex justify-content-center">
+                                    <a href="" class="main_btn">
+                                        <span>
+                                            <span class="text-1">Start Your Project</span>
+                                            <span class="text-2">Start Your Project</span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact section -->
+                <section id="contactPanel" class="slide-panel text-white p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="fw-bold text-white">CONTACT WITH ME</h4>
+                        <a href="#" class="back_btn fw-bold text-decoration-none" id="backBtnContact"><img
+                                src="{%static 'assets/img/icon_back.svg'%}" alt=""> Back</a>
+                    </div>
+
+                    
+                    <div class="contact-section">
+                        
+                        <form class="contact-form" method="POST" action="{% url 'contact-form'%}">
+                            {%csrf_token%}
+
+                            
+
+                            <div class="form-row">
+                            
+                                <input type="text"  name='name' placeholder="Name" required>
+                                <input type="email" name='email' placeholder="E-mail" required>
+                            </div>
+                            <div class="form-row">
+                                <input type="text"  name='phone' placeholder="Phone" required>
+                                <input type="text" name='subject' placeholder="Subject" required>
+                            </div>
+                            <textarea  name='product' placeholder="Product Discription"></textarea>
+
+                            <button type="submit" class="main_btn ct_btn">
+                                <span>
+                                    <span class="text-1">Send Message</span>
+                                    <span class="text-2">Send Message</span>
+                                </span>
+                            </button>
+                        </form>
+
+                        {%if success%}
+                        <p>ThankYou {{name}} for your message was sucessfully sent</p>
+                        
+                        {%endif%}
+
+
+                        <div class="contact-info-bar">
+                            <div class="info-box">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="info-text">
+                                    <span class="label">CALL NOW</span>
+                                    <span class="value">+913 411 9771</span>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <i class="fas fa-paper-plane"></i>
+                                <div class="info-text">
+                                    <span class="label">E-MAIL</span>
+                                    <span class="value">ofempatrick10@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info-text">
+                                    <span class="label">LOCATION</span>
+                                    <span class="value">Calabar</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer>
+                            <div class="text-center mt-4">
+                                <p class="mb-0">© 2026 Paris. All rights reserved.</p>
+                            </div>
+                        </footer>
+
+                    </div>
+                    
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="{%static 'assets/js/jquery.min.js'%}"></script>
+    <script src="{%static 'assets/js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'assets/js/popper.min.js'%}"></script>
+    <script src="{%static 'assets/js/owl.carousel.min.js'%}"></script>
+    <script src="{%static 'assets/js/lightbox.min.js'%}"></script>
+    <script src="{%static 'assets/js/mixitup'%}.min.js"></script>
+    <script src="{%static 'assets/js/SmoothScroll.js'%}"></script>
+    <script src="{%static 'assets/js/wow.min.js'%}"></script>
+    <script src="{%static 'assets/js/magic-mouse.js'%}"></script>
+	
+	<script type="text/javascript">
+			$(function() {
+				options = {
+				  "outerStyle": "circle-basic",
+				  "hoverEffect": "circle-move",
+				  "hoverItemMove": false,
+				  "defaultCursor": true,
+				  "outerWidth": 41,
+				  "outerHeight": 41
+				}
+				magicMouse(options);
+
+			});
+	</script>
+    <script src="{%static 'assets/js/main.js'%}"></script>
+</body>
+
+
+<!-- Mirrored from polix-html.vercel.app/polix/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jan 2026 15:29:07 GMT -->
+</html>
