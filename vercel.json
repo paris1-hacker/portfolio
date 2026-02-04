@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
         {
-            "src": "Crutech/wsgi.py",
+            "src": "porfolio/wsgi.py",
             "use": "@vercel/python",
             "config": {
                 "maxLambdaSize": "15mb",
@@ -23,10 +23,10 @@
       "src": "/static/(.*)",
       "dest": "/static/$1"
     },
-    
+
     {
       "src": "/(.*)",
-      "dest": "Crutech/wsgi.py"
+      "dest": "porfolio/wsgi.py"
     }
   ]
 }
