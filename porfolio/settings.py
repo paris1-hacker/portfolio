@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-21d5%0@0325$ivp_&2h(&j5b$#^@24k7yfc@^#mu-6iwug9!-a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['portfolio-megj.vercel.app', 'www.portfolio-megj.vercel.app']
 
 
 # Application definition
