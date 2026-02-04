@@ -88,10 +88,15 @@ WSGI_APPLICATION = 'porfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': env.read_env('NAME'),
+        'USER': env.read_env('USER'),
+        'PASSWORD': env.read_env('PASSWORD'),
+        'HOST': env.read_env('HOST'),
+        'PORT': env.read_env('PORT'),
     }
 }
+
 
 
 # Password validation
